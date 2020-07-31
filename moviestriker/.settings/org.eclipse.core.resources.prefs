@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/template/default/footer.jsp=UTF-8
+encoding//WebContent/WEB-INF/template/default/header.jsp=UTF-8
+encoding//WebContent/WEB-INF/template/default/template.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/error/400.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/error/404.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/main/login.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/main/main.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/main/signup.jsp=UTF-8

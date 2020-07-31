@@ -1,11 +1,10 @@
 
 create table member(
 num number(5)constraint member_num_pk primary key,
-email varchar2(40) constraint member_email_uk unique,
+mailphone varchar2(40) constraint member_email_uk unique,
 pwd varchar2(30),
 name varchar2(30),
-phone varchar2(40),
-rdate date
+mdate date
 );
 
 create sequence member_seq

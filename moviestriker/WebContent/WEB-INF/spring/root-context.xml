@@ -25,7 +25,7 @@
 <tx:annotation-driven transaction-manager="tm"/>
 		
 
-	<bean id="naverLoginBO" class="mvc.model.NaverLoginBO" ></bean>
+
 	<bean id="uploadPath" class="java.lang.String">
 		<constructor-arg
 			value="C:\Users\gusrl\git\finalpro\finalpro\WebContent\resources\images">

@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
-<context:annotation-config />
+	<context:annotation-config />
 	<mvc:annotation-driven />
 	<context:component-scan base-package="mvc" />
 	<!-- 이미지 받아오기 위한 방법 -->
@@ -36,4 +36,5 @@
 			<ref bean="commonInterceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>
+		<bean id="naverLoginBO" class="mvc.model.NaverLoginBO" ></bean>
 </beans>

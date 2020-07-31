@@ -18,7 +18,7 @@ public class CommonInterceptor extends Interceptor {
 	            log.debug("===================       START       ===================");
 	            log.debug(" Request URI \t:  " + request.getRequestURI());
 	        }
-	        // 부모클래스인 Interceiptor의 preHandle을 호출한다.
+	        
 	        return super.preHandle(request, response, handler);
 	    }
 	 

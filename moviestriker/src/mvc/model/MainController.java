@@ -42,26 +42,21 @@ public class MainController {
 	@Autowired
 	private MemberDao memberDao;
 	private static final Log LOG = LogFactory.getLog(MainController.class);
-	//ÃÖÃÊ ¸ŞÀÎÆäÀÌÁö·Î ÀÌµ¿ÇÔ
-	//ÃÖ½Å¸®½ºÆ®(¸®ºä,·ÎÄÃ)À» ¸ğµ¨ÀÇ ¼Ó¼º°ªÀ¸·Î ºä¿¡³Ñ°ÜÁÜ
+
 	@RequestMapping(value = {"/","/main"})
 	public String goMain(Model model) throws Exception, FileNotFoundException, IOException, ParseException {		
 		return "main/main";		
 	}
 	@RequestMapping(value = "/goLogin", method = { RequestMethod.GET, RequestMethod.POST })
 	public String goLogin(Model model, HttpSession session, HttpServletRequest request) {
-		/* ³×ÀÌ¹ö¾ÆÀÌµğ·Î ÀÎÁõ URLÀ» »ı¼ºÇÏ±â À§ÇÏ¿© naverLoginBOÅ¬·¡½ºÀÇ getAuthorizationUrl¸Ş¼Òµå È£Ãâ */
+
 		String naverAuthUrl = naverLoginBO.getAuthorizationUrl(session);
 
-		// https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=sE***************&
-		// redirect_uri=http%3A%2F%2F211.63.89.90%3A8090%2Flogin_project%2Fcallback&state=e68c269c-5ba9-4c31-85da-54c16c658125
-		System.out.println("³×ÀÌ¹ö:" + naverAuthUrl);
-
-		// ³×ÀÌ¹ö
 		model.addAttribute("url", naverAuthUrl);
 		model.addAttribute("next", request.getParameter("next"));
 		return "main/login";
 	}
+	@Autowired
 	private NaverLoginBO naverLoginBO;
 	private String apiResult = null;
 
@@ -70,14 +65,11 @@ public class MainController {
 		this.naverLoginBO = naverLoginBO;
 	}
 
-// ³×ÀÌ¹ö ·Î±×ÀÎ ¼º°ø½Ã callbackÈ£Ãâ ¸Ş¼Òµå
 	@RequestMapping(value = "/callback", method = { RequestMethod.GET, RequestMethod.POST })
 	public String callback(Model model, @RequestParam String code, @RequestParam String state, HttpSession session)
 			throws IOException {
-		System.out.println("¿©±â´Â callback");
 		OAuth2AccessToken oauthToken;
 		oauthToken = naverLoginBO.getAccessToken(session, code, state);
-		// ·Î±×ÀÎ »ç¿ëÀÚ Á¤º¸¸¦ ÀĞ¾î¿Â´Ù.
 		apiResult = naverLoginBO.getUserProfile(oauthToken);
 		JSONParser parser = new JSONParser();
 		Object obj = null;
@@ -97,33 +89,32 @@ public class MainController {
 		System.out.println(nname);
 		session.setAttribute("name", nname);
 		session.setAttribute("email", nemail);
-		/* ³×ÀÌ¹ö ·Î±×ÀÎ ¼º°ø ÆäÀÌÁö View È£Ãâ */
 		return "redirect:main";
 	}
 	@RequestMapping(value = "/login", method = { RequestMethod.POST, RequestMethod.GET })
 	public String login(MemberVO vo, HttpSession session, RedirectAttributes redirectAttributes, String next) {
 
 		MemberVO vv = memberDao.loginSession(vo);
-		SimpleDateFormat sim = new SimpleDateFormat("yyyy³â MM¿ùddÀÏ HH½ÃmmºĞssÃÊ");
+		SimpleDateFormat sim = new SimpleDateFormat("yyyyë…„ MMì›”ddì¼ HHì‹œmmë¶„ssì´ˆ");
 		String time1 = sim.format(new Date());
 		String urlPath = "";
 
 		System.out.println(next.replace("/buguiyounghwa/", "hotel/"));
-		if (vv != null) { // ·Î±×ÀÎ
+		if (vv != null) { 
 			session.setAttribute("name", vv.getName());
 			session.setAttribute("address", vv.getAddress());
 			session.setAttribute("email", vv.getEmail());
 			session.setAttribute("phone", vv.getPhone());
 			session.setAttribute("id", vv.getId());
-			LOG.info(vv.getId() + "´ÔÀÌ " + time1 + "¿¡ ·Î±×ÀÎÇÏ¼Ì½À´Ï´Ù.");
+			LOG.info(vv.getId() + "ë‹˜ì´ " + time1 + "ì— ë¡œê·¸ì¸í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			if (next.equals("")) {
 				urlPath = "redirect:main";
 			} else {
 				urlPath = next.replace("/buguiyounghwa/", "redirect:");
 			}
 
-		} else {// Àß¸ø
-			redirectAttributes.addFlashAttribute("error", "¾ÆÀÌµğ³ª ºñ¹Ğ¹øÈ£°¡ Àß¸øµÇ¾ú½À´Ï´Ù.");
+		} else {
+			redirectAttributes.addFlashAttribute("error", "ì•„ì´ë””ë‚˜ ë¹„ë°€ë²ˆí˜¸ê°€ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			urlPath = "redirect:goLogin";
 		}
 		System.out.println(urlPath);
