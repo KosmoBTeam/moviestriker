@@ -5,6 +5,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<typeAliases>
 		<!-- 회원가입 알리아스 -->
-	
+	 <typeAlias type="mvc.vo.MemberVO" alias="member"/>
+	 <typeAlias type="mvc.vo.MoviesVO" alias="movies"/>
+	 <typeAlias type="mvc.vo.SlideTitleVO" alias="slidetitle"/>
 	</typeAliases>
 </configuration>

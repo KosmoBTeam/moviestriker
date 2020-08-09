@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+a:-webkit-any-link {
+	cursor: pointer;
+}
+
+.css-1nrmw3u-Href {
+	color: rgba(255, 255, 255, 0.7) !important;
+	text-decoration: none;
+}
+
+.slick-track {
+	top: 50px;
+}
+
+#titleimage>div>div.slick-track {
+	position: initial;
+}
+
+.draggable {
+	padding: 0;
+}
+.hoverbuttonrun:hover{
+	color:red;
+}
+.css-pz9ouq-HelpLink {
+	color: rgba(255, 255, 255, 0.7) !important;
+	text-decoration: none;
+}
+
+.css-1yd5as9-LegalAndHelpList::after {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 5px 6px 0px;
+}
+
+.css-15wgbxm-LegalAndHelpList::after {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 5px 6px 0px;
+}
+
+.css-1yd5as9-LegalAndHelpList {
+	display: inline-block;
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.css-ixy3be-ContactInfo {
+	letter-spacing: -0.5px;
+	margin: 24px 0px 0px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.css-suh0oq-ContactInfoListTitle {
+	display: inline-block;
+	width: 155px;
+}
+
+.css-1jweooo-ExtraInfo {
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 12px;
+	letter-spacing: -0.5px;
+	vertical-align: middle;
+	line-height: 20px;
+}
+
+div {
+	display: block;
+	height: -webkit-fill-available;
+}
+
+.css-2x8q7u-ExtraBlock {
+	margin: 46px 0px 0px;
+}
+
+.css-n0i3qz-ExtraInfoList {
+	display: inline-block;
+}
+
+.css-n0i3qz-ExtraInfoList::after {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 5px 6px 0px;
+}
+
+.css-8mx6ne-Copyright {
+	color: rgba(255, 255, 255, 0.3);
+	font-family: "Helvetica Neue", Helvetica, serif;
+	font-size: 12px;
+	font-weight: 400;
+	white-space: pre-line;
+	margin: 3px 0px 0px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.css-1rbg53a-Information {
+	height: 200px;
+	top: 300px;
+	left: 80px;
+	z-index: 200;
+	position: relative;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	padding: 0 4%;
+}
+
+.css-1jcg1hw-StyledLinkButton-HomeBannerButtonStyle {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.04);
+	color: #FFFFFF;
+	font-size: 1.25vw;
+	font-weight: 500;
+	-webkit-letter-spacing: -0.0390625vw;
+	-moz-letter-spacing: -0.0390625vw;
+	-ms-letter-spacing: -0.0390625vw;
+	letter-spacing: -0.0390625vw;
+	line-height: 1.875vw;
+	padding: 0.78125vw 1.015625vw;
+	margin-top: 2.578125vw;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+}
+.css-4mavcu-FooterLogo {
+	position: relative;
+	top: 6px;
+}
+
+img {
+	border-style: none;
+}
+
+.css-ui4zr5-SnsLinks {
+	position: absolute;
+	top: 181px;
+	right: 50px;
+}
+
+.css-12en6g9-Input {
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.4px;
+	line-height: 1.875vw;
+	width: 100%;
+	height: 36px;
+	padding: 6px 30px 6px 36px;
+	border-width: 0px;
+	border-style: initial;
+	border-color: initial;
+	border-image: initial;
+	border-radius: 2px;
+	outline: 0px;
+}
+
+.css-ixy3be-ContactInfo {
+	letter-spacing: -0.5px;
+	margin: 24px 0px 0px;
+}
+
+.css-1lm2916-ContactInfoListDescription::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 1px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 0px 9px 0px 0px;
+}
+
+.css-15wgbxm-LegalAndHelpList {
+	display: inline-block;
+	position: relative;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.css-1cqje1p-ContactInfoList {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	line-height: 20px;
+}
+
+*, ::before, ::after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+.css-d9xhzx-LegalAndHelps {
+	color: rgba(255, 255, 255, 0.2);
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+
+ol, ul {
+	list-style-type: none;
+	margin-block-end: 0px;
+	margin-block-start: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	line-height: normal;
+}
+
+body {
+	padding-top: 80px;
+	padding: 0px;
+}
+
+html, body {
+	font-weight: 400;
+	color: white;
+	height: max-content;;
+	background: white;
+	margin: 0px;
+}
+
+.css-etenzj-StyledLeftNav {
+	float: left;
+	padding-left: 21px;
+}
+
+.css-etenzj-StyledLeftNav:before, .css-etenzj-StyledLeftNav:after {
+	content: " ";
+	display: table;
+}
+
+.css-1gh5316-StyledLeftNavItem {
+	float: left;
+	line-height: 72px;
+	margin-left: 23px;
+}
+
+.css-1gh5316-StyledLeftNavItem>.ez2p5pn3 {
+	display: block;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.slider div span {
+	font-size: xx-large;
+	position: absolute;
+	top: 50%;
+}
+
+.css-16k05yq-StyledNavLink {
+	color: rgba(255, 255, 255, 0.88);
+	font-weight: 400;
+	color: #FFFFFF;
+	font-weight: 700;
+	position: relative;
+}
+
+#profiletoggle li:hover {
+	background: #848484;
+}

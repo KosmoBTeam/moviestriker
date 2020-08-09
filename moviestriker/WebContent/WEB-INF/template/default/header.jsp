@@ -16,70 +16,72 @@
 		src="about:blank" data-test-id="ChatWidgetWindow-iframe"
 		title="Zendesk Chat widget window"></iframe>
 </div>
-<div id="root" style="width: 100%; height: 100%;">
-	<div class="css-1tumwum-Self e19xg79h0">
-		<header class="css-1926epj-Self e1wyxeas0">		<nav class="css-1bper7x-StyledGnb ez2p5pn0">
-			<a class="css-q6083p-StyledLogo ez2p5pn6" href="/"></a>
-			<ul class="css-etenzj-StyledLeftNav ez2p5pn4">
-				<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5"><a
-					class="css-1ga8frb-StyledNavLink ez2p5pn3" href="/home">홈</a></li>
-				<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5"><div
-						class=" e1h00pfg0 css-mj0oj1-Self-Self e193xlpk0">
-						<div class="css-tq98he-Self esw793k0">
-							<div class="css-1w8esii-ChildrenWrapper e193xlpk1">
-								<a class="css-1j46kt-StyledNavLink ez2p5pn3" href="/explore">탐색하기</a>
-							</div>
+
+<header class="css-1926epj-Self e1wyxeas0" style="color: black;">
+	<nav class="css-1bper7x-StyledGnb ez2p5pn0">
+		<a class="css-q6083p-StyledLogo ez2p5pn6" href="main"></a>
+		<ul class="css-etenzj-StyledLeftNav ez2p5pn4" style="width: 60%;">
+			<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5"><a
+				class="css-1ga8frb-StyledNavLink ez2p5pn3" href="main" style="color: inherit;">홈</a></li>
+			<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5"><div
+					class=" e1h00pfg0 css-mj0oj1-Self-Self e193xlpk0">
+					<div class="css-tq98he-Self esw793k0">
+						<div class="css-1w8esii-ChildrenWrapper e193xlpk1"
+							style="display: block; visibility: visible; top: 96px; right: 0px; font-size: xx-large;">
+							<a class="css-1j46kt-StyledNavLink ez2p5pn3" href="/explore" style="color: inherit;">탐색하기</a>
 						</div>
-					</div></li>
-				<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5"><a
-					class="css-1ga8frb-StyledNavLink ez2p5pn3" href="/evaluate">평가하기</a></li>
-			</ul>
-			<ul class="css-1sjcvs8-StyledRightNav ez2p5pn10">
-				<li class="css-socxq3-StyledRightNavItem ez2p5pn13"><div
-						class="css-1bihn1n-StyledSearchNav ez2p5pn16">
-						<span class="css-7ql8ly-StyledSearchNavText ez2p5pn17"><span
-							class="SVGInline css-1kxovx7-StyledSearchIcon ez2p5pn14">
-								<!--?xml version="1.0" encoding="UTF-8"?--> <svg
-									class="SVGInline-svg css-1kxovx7-StyledSearchIcon-svg ez2p5pn14-svg"
-									width="16px" height="16px" viewBox="0 0 16 16" version="1.1"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>Icons / GNB / Search / Inactive</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icons-/-GNB-/-Search-/-Inactive" stroke="none"
-										stroke-width="1" fill="none" fill-rule="evenodd"
-										fill-opacity="0.88">
-        <g id="search" transform="translate(1.000000, 1.000000)"
-										fill="#FFFFFF" fill-rule="nonzero">
-            <path
-										d="M13.9988333,12.8959444 L12.8959444,13.9988333 L8.72316667,9.82605556 C7.812,10.5081667 6.68461111,10.9172778 5.45883333,10.9172778 C2.44377778,10.9172778 0,8.4735 0,5.45883333 C0,2.44377778 2.44377778,0 5.45883333,0 C8.4735,0 10.9172778,2.44377778 10.9172778,5.45883333 C10.9172778,6.68461111 10.5081667,7.812 9.82605556,8.72316667 L13.9988333,12.8959444 L13.9988333,12.8959444 Z M5.45883333,1.55944444 C3.30516667,1.55944444 1.55944444,3.30516667 1.55944444,5.45883333 C1.55944444,7.61211111 3.30516667,9.35783333 5.45883333,9.35783333 C7.61211111,9.35783333 9.35783333,7.61211111 9.35783333,5.45883333 C9.35783333,3.30516667 7.61211111,1.55944444 5.45883333,1.55944444 L5.45883333,1.55944444 Z"
-										id="Shape"></path>
-        </g>
-    </g>
-</svg>
-						</span>&nbsp;&nbsp;검색</span>
-						<div
-							class="ez2p5pn1 css-1wj42un-Self-StyledClickOutsideDetectorForSearchInput esw793k0">
-							<div class="css-b0u8fh-StyledSearchInputWrapper ez2p5pn15"
-								style="width: 0px; opacity: 0.1;"></div>
-						</div>
-					</div></li>
-				<li class="css-socxq3-StyledRightNavItem ez2p5pn13"><a
-					class="css-1ga8frb-StyledNavLink ez2p5pn3" href="/wishes">위시리스트</a></li>
-				<li class="css-socxq3-StyledRightNavItem ez2p5pn13"><div
-						class=" css-32jeke-Self e193xlpk0">
-						<div class="css-tq98he-Self esw793k0">
-							<div class="css-1w8esii-ChildrenWrapper e193xlpk1">
-								<div class="css-p018rk-CurrentProfile e9o62ym1">
-									<div
-										src="https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_300,w_300/profile1_jomqrw.jpg"
-										class="css-qvlvxs-ProfileImage e9o62ym4"></div>
-									<span class="css-1vu9i2q-UserName e9o62ym3">이현기</span><span
-										class="css-55flga-ArrowDown e9o62ym0"></span>
-								</div>
-							</div>
-						</div>
-					</div></li>
-			</ul>
-		</nav> </header>
+					</div>
+				</div></li>
+			<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5" style="width: 50%"><a
+				class="css-1ga8frb-StyledNavLink ez2p5pn3" href="/evaluate" style="color: inherit;">평가하기</a></li>
+			<li class="css-socxq3-StyledRightNavItem ez2p5pn13" style=""><div
+					class="search-wrapper" id="search-wrapper">
+					<div class="input-holder" style="top: 15px; left: -40%" id="holder">
+						<input type="text" class="search-input" style="top: -7px;"
+							placeholder="제목,주제,장르 검색" />
+						<button class="search-icon" onclick="searchToggle(this, event);"
+							style="top: -3px;" id="search-icon">
+							<span id="close" class="" onclick="searchToggle(this, event);"></span>
+						</button>
+					</div>
+				</div></li>
+
+		</ul>
+		<ul class="css-1sjcvs8-StyledRightNav">
+			<li class="css-socxq3-StyledRightNavItem toggledown">
+				<button
+					style="font-size: 24px; font-size: 30px; color: white; background: black; border-style: none; cursor: pointer; transition: all 0.3s ease-in-out; width: 50px; height: 50px; border: none; border-radius: 6px; background: black; padding: 0px; outline: none; position: relative; z-index: 2; float: right; cursor: pointer; transition: all 0.3s ease-in-out; top: 12px;">
+					<i class='fas fa-address-book' style='font-size: 40px;'></i>
+				</button>
+			</li>
+			<li class="css-socxq3-StyledRightNavItem toggledown"><div
+					class=" css-32jeke-Self e193xlpk0" style="width: 236px;" id="">
+					<span class="css-1vu9i2q-UserName e9o62ym3" id="my"
+						style="font-size: xx-large;">${sessionScope['name']}님</span>
+					<div id="togglediv1" class="displaynone"
+						style="height: 300px; box-sizing: inherit; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); width: fit-content; box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; font-size: 0.875rem; color: rgb(40, 42, 53); border-radius: 4px; background: white; margin-top: -20px;">
+						<ul id="profiletoggle" style="font-size: x-large;">
+							<li><a href="#"><span>영화 이어보기</span></a></li>
+							<li><a href="#"><span>나의 영화히스토리</span></a></li>
+							<li><a href="#"><span>위시리스트 </span></a></li>
+							<li><a href="#"><span>설정</span></a></li>
+							<li><a href="#"><span>고객센터</span></a></li>
+							<li><a href="logout"><span>로그아웃</span></a></li>
+						</ul>
+					</div> 
+				</div></li>
+		</ul>
+		<ul class="dropdown"
+			style="right: 80%; top: 12px; position: absolute;">
+			<li class="css-1gh5316-StyledLeftNavItem ez2p5pn5">
+				<button class="masthead" id="dropdownMenuLink"
+					style='font-size: 24px; font-size: 30px; color: white; background: black; border-style: none; cursor: pointer; transition: all 0.3s ease-in-out; width: 50px; height: 50px; border: none; border-radius: 6px; background: black; padding: 0px; outline: none; position: relative; z-index: 2; float: right; cursor: pointer; transition: all 0.3s ease-in-out;'>
+					<i class='fas fa-list-ul' style='font-size: 40px;'></i>
+				</button>
+			</li>
+		</ul>
+		<ul class="css-1sjcvs8-StyledRightNav ez2p5pn10">
+
+		</ul>
+	</nav>
+</header>

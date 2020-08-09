@@ -3,5 +3,30 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="movo">
-
+	<select id="recentlist" resultType="movies">
+		<![CDATA[ select rownum
+		num,moviename,thumnail,moviestars,opendate,hit,rate,genre,nation,modate
+		from movies where num < 11 order by num desc]]>
+	</select>
+	<select id="titleList" resultType="slidetitle">
+		select * from slidetitle
+	</select>
+	<select id="childrenList" resultType="movies">
+			<![CDATA[ select * from (select rownum num,moviename,thumnail,moviestars,opendate,hit,rate,genre,nation,modate
+		from movies where rate = '12' or rate = '전체관람가') mo where mo.num < 11 order by num desc]]>
+	</select>
+	<select id="horrorList" resultType="movies">
+	<![CDATA[ select * from (select rownum num,moviename,thumnail,moviestars,opendate,hit,rate,genre,nation,modate
+		from movies where genre = '공포/스릴러') mo where mo.num < 11 order by num desc]]>
+	</select>
+	<select id="koreanList" resultType="movies">
+	<![CDATA[select * from (select rownum num,moviename,thumnail,moviestars,opendate,hit,rate,genre,nation,modate
+		from movies where nation = '한국') mo where mo.num < 11 order by num desc]]>
+	</select>
+	<select id="popularList" resultType="movies">
+	<![CDATA[select mo.* from (select num,moviename,thumnail,moviestars,opendate,rate,genre,nation,modate, ROW_NUMBER() over(order by hit desc) as rk from movies) mo where  mo.rk<10 order by mo.rk desc]]>
+	</select>
+	<select id="getMovie" parameterType="int" resultType="movies">
+		select * from movies where num = #{num}
+	</select>
 </mapper>

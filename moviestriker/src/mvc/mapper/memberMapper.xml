@@ -3,7 +3,39 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mvo">
-<insert id="signup">
-	insert into member values(member_seq.nextVal,#{email},#{pwd},#{name},#{phone},sysdate)
-</insert>
+	<insert id="signup">
+		insert into member
+		values(member_seq.nextVal,#{email},#{pwd},#{name},sysdate,'',0)
+	</insert>
+	<select id="loginSession" resultType="member"
+		parameterType="member">
+		select email,name,mdate,authkey,authstatus from member where email=#{email} and pwd=#{pwd} group by name,email,mdate,authkey,authstatus
+	</select>
+	<select id="idchk" resultType="int" parameterType="String">
+		select
+		count(*)
+		cnt from member where email=#{email}
+	</select>
+	<select id="chkPwd" resultType="int">
+		select
+		count(*)
+		cnt from
+		member_table where email=#{email} and pwd=#{pwd}
+	</select>
+	<update id="updatekey" parameterType="member">
+		update member set
+		authkey = #{authkey} where email = #{email}
+	</update>
+	<update id="updateauthstatus" parameterType="member">
+		update member
+		set authstatus = #{authstatus} where email = #{email}
+	</update>
+	<update id="updatePwd" parameterType="member">
+		update member
+		set pwd
+		= #{pwd} where email = #{email}
+	</update>
+	<select id="getId" parameterType="String" resultType="member">
+		select * from member where email = #{email}
+	</select>
 </mapper>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <footer class="css-elo5ab-Self eyuxr3e0"
-	style="position: relative; background: rgba(0,0,0,.5); padding: 27px 50px 40px; display: block; top: 100%;">
+	style="position: relative; background: rgba(0, 0, 0, .5); padding: 27px 50px 40px; display: block; top: auto;">
 	<ul class="css-d9xhzx-LegalAndHelps eyuxr3e12">
 		<li class="css-15wgbxm-LegalAndHelpList eyuxr3e11">무비스트라이커 서비스
 			이용약관</li>
@@ -56,66 +56,222 @@
 	<div class="css-8mx6ne-Copyright eyuxr3e5">
 		<a
 			href="https://watcha.team/WATCHA%200a7284a6c7224e939be9e8f4af5e8be0/Untitled%20b095476de108404ba618447de1b20594.html"><img
-			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5OSIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDk5IDQwIj4KICAgIDxnIGZpbGw9IiM1QTVBNUEiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI4LjU1NSAwTDI2LjcyMSAyNi42NTEgMjYuMjYyIDI2LjY3NiAyMi4zOCA4Ljc3NCAxNi4yMDcgOC43NzQgMTMuMjk5IDI3LjUzMyAxMi42ODIgMjcuNTY4IDkuODc5IDguNzc0IDAgOC43NzQgNS45NDIgMzkuNDE3IDE3LjA1NiAzOC4yNDkgMTkuMjYgMjAuOTQ1IDE5Ljg3NyAyMC45MTMgMjIuODQzIDM3LjY0IDMxLjk1IDM2LjY4MyAzOC4wNDcgMHpNNDIuOTY1IDI1LjU4NmwuOTUxLTEwLjU0OS44NS0uMDEzLjk5MyAxMC4zOC0yLjc5NC4xODJ6TTM5LjM1OSA4Ljc3NGwtNC41NTMgMjcuNjA4IDcuMjU0LS43NjIuNDQ2LTQuOTQ4IDMuNzI2LS4zMjUuNDU4IDQuNzg3IDYuNDgzLS42ODEtMy45MzYtMjUuNjc5SDM5LjM2ek04My44ODggMTcuNzRMODIuMjY4IDE3LjgwOCA4Mi4yNjggOC43NzQgNzcuNzI1IDguNzc0IDc3LjcyNSAzMS44NjUgODIuMjY4IDMxLjM5NSA4Mi4yNjggMjIuMTI1IDgzLjg4OCAyMi4wMjYgODMuODg4IDMxLjIyNCA4Ny45NzggMzAuNzk0IDg3Ljk3OCA4Ljc3NCA4My44ODggOC43NzR6TTkwLjYxMyA4Ljc3NEw4OS4wNiAzMC42ODFsMy45MzYtLjQxNC4xMjUtNC40NDggMS40MDItLjEyLjI0OCA0LjM4MyAzLjQ3Mi0uMzY1LTEuNzc0LTIwLjk0M2gtNS44NTV6bTIuODUgNC45OTJoLjM4NWwuNDc4IDguNDUzLTEuMTA2LjA3LjI0My04LjUyM3pNNTEuNzg0IDE1LjI4Nkw1NS41NjUgMTUuMTg3IDU1LjU2NSAzNC4yMDEgNjEuMTIyIDMzLjYxNyA2MS4xMjIgMTUuMDQxIDY0LjI4NiAxNC45NTggNjQuMjg2IDguNzc0IDUxLjc4NCA4Ljc3NHpNNzEuNzI3IDI5LjEyOWwtMS41NDQuMTI4di0xNS45bDEuNTQ0LS4wMjN2NC4zMzJsNC42MDktLjE3NnYtNC4yNDJjMC0yLjgyNi0xLjkwOC00LjgwNi01LjM4LTQuODA2LTMuNzA1IDAtNS44NTYgMS45OC01Ljg1NiA0Ljk5OHYxNS4xOTJjMCAzLjE0OCAxLjc2NSA0LjY3IDUuNzc4IDQuMjIgMy42MjUtLjQwNiA1LjUzNS0yLjQyOCA1LjUzNS01LjQ0N3YtNC45MjZsLTQuNjg2LjI3OXY2LjM3eiIvPgogICAgPC9nPgo8L3N2Zz4K"
-			width="55" alt="MovieStriker" class="css-4mavcu-FooterLogo eyuxr3e15"></a>Copyright
-		© 2020 by <em>MovieStriker, Inc.</em> All rights reserved.
+			src="" width="55" alt="MovieStriker"
+			class="css-4mavcu-FooterLogo eyuxr3e15"></a>Copyright © 2020 by <em>MovieStriker,
+			Inc.</em> All rights reserved.
 	</div>
 </footer>
-</div>
-</div>
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<script type="text/javascript"
+	src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$.fn.scrollStopped = function(callback) {
-			var that = this, $this = $(that);
-			$this.scroll(function(ev) {
-				clearTimeout($this.data('scrollTimeout'));
-				$this.data('scrollTimeout', setTimeout(callback.bind(that),
-						250, ev));
-			});
-		};
-		var lastScrollTop = 0;
-		var delta = 5;
-		var alpha = 20; // 동작의 구현이 시작되는 위치 
-		var navbarHeight = $('header').outerHeight();
-		var st = $(this).scrollTop();
-		var didScroll;
-		$(window).scroll(function(event) {
-			didScroll = true;
-		});
-		setInterval(function() {
-			if (didScroll) {
-				hasScrolled();
-				didScroll = false;
-			}
-		}, 250);
-		function hasScrolled() {
-			var st = $(this).scrollTop();
-			console.log(st);
-			if (Math.abs(lastScrollTop - st) <= delta)
-				return;
-			if (st > lastScrollTop && st > navbarHeight) {
-				$('header').removeClass('nav-down').addClass('nav-up');
-			} else { // Scroll Up 
-				if (st + $(window).height() < $(document).height()) {
-					$('header').removeClass('nav-down').addClass('nav-up');
-				}
-			}
-			if (Math.abs(lastScrollTop - st) >= alpha) {
-				$('header').css('top', '-80px');
-			} else {
-				$('header').css('top', '-80px');
-			}
-			$(window).scrollStopped(
-					function(ev) {
-						$('header').removeClass('nav-up').addClass('nav-down').css('top', '0px');
-					});
-			console.log($(window).height());
-			console.log($(document).height());
-			lastScrollTop = st;
-
+	function searchToggle(obj, evt) {
+		var container = $(obj).closest('.search-wrapper');
+		if (!container.hasClass('active')) {
+			container.addClass('active');
+			evt.preventDefault();
+		} else if (container.hasClass('active')
+				&& $(obj).closest('.input-holder').length == 0) {
+			container.removeClass('active');
+			// clear input
+			container.find('.search-input').val('');
 		}
-	});
+	}
+
+	$(document)
+			.ready(
+					function() {
+					    let isEnd = false;
+					    
+					    $(function(){
+					        $(window).scroll(function(){
+					            let $window = $(this);
+					            let scrollTop = $window.scrollTop();
+					            let windowHeight = $window.height();
+					            let documentHeight = $(document).height();
+					            
+					            console.log("documentHeight:" + documentHeight + " | scrollTop:" + scrollTop + " | windowHeight: " + windowHeight );
+					            
+					            // scrollbar의 thumb가 바닥 전 30px까지 도달 하면 리스트를 가져온다.
+					            if( scrollTop + windowHeight + 30 > documentHeight ){
+					                fetchList();
+					            }
+					        })
+					        fetchList();
+					    });
+					    let fetchList = function(){
+					        if(isEnd == true){
+					            return;
+					        }
+					        
+					        // 방명록 리스트를 가져올 때 시작 번호
+					        // renderList 함수에서 html 코드를 보면 <li> 태그에 data-no 속성이 있는 것을 알 수 있다.
+					        // ajax에서는 data- 속성의 값을 가져오기 위해 data() 함수를 제공.
+					        let startNo = $("#masterul li").last().data("no") || 0;
+					        $.ajax({
+					            url:"getMain?no=" + startNo ,
+					            type: "GET",
+					            dataType: "json",
+					            success: function(result){
+					                // 컨트롤러에서 가져온 방명록 리스트는 result.data에 담겨오도록 했다.
+					                // 남은 데이터가 5개 이하일 경우 무한 스크롤 종료
+					                let length = result.data.length;
+					                if( length < 5 ){
+					                    isEnd = true;
+					                }
+					                $.each(result.data, function(index, vo){
+					                    renderList(false, vo);
+					                })
+					            }
+					        });
+					    }
+					    
+					    let renderList = function(mode, vo){
+					        // 리스트 html을 정의
+					        let html = ;
+					        
+					        if( mode ){
+					            $("#list-guestbook").prepend(html);
+					        }
+					        else{
+					            $("#list-guestbook").append(html);
+					        }
+					    }
+						$('.goDetailbutton').click(function() {
+							$(this).parent(".goDetail").submit();
+						});
+						$('.css-1aw5v0q-RowItem')
+								.hover(function() {
+									var $transform = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-19lh6j6-StyledPreviewWrapper-StyledPreviewContainer");
+									var $origin = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-ox4zdw-StyledDefaultContentWrapper").children(".emn3bqe14");
+									$transform.css("z-index", "100").css("display", "block");
+									$origin.css("display", "none");
+							
+									$(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').parent('form').children('.css-qjvnrt-StyledContentTitleWrapper').children('.css-x436c0-Self-Self-StyledContentTitle').children(".css-1cplejl-Text").css("display", "none");
+									//$(this).parent(".slick-track").css("width", "6507px");
+									//$(this).children().children().children(".css-qjvnrt-StyledContentTitleWrapper").css('display','none');
+								}, function() {
+									var $transform = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-19lh6j6-StyledPreviewWrapper-StyledPreviewContainer");
+									var $origin = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-ox4zdw-StyledDefaultContentWrapper").children(".emn3bqe14");
+									$transform.css("z-index", "1").css("display", "none");
+									//$transform.children("div").children("a").children("img").css("color", "black");
+									$origin.css("display", "block");
+									$(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').parent('form').children('.css-qjvnrt-StyledContentTitleWrapper').children('.css-x436c0-Self-Self-StyledContentTitle').children(".css-1cplejl-Text").css("display", "block");
+									//$(this).parent(".slick-track").css("width", "6210px");
+									//$(this).children().children().children(".css-qjvnrt-StyledContentTitleWrapper").css("display", "block");
+								});
+						$('.slider').slick({
+							arrows : false
+						});
+						$('.css-1yx6r0f-ContentsContainer')
+								.slick(
+										{
+											slidesToShow : 8,
+											slidesToScroll : 1,
+											autoplay : false,
+											arrows : true,
+											prevArrow : "<button style='font-size:24px;cursor:pointer;display: inline-block;background: none;border: none;color: white;position: absolute;z-index: 200;top: 16%'><i class='fas fa-angle-left' style='font-size: -webkit-xxx-large;'></i></button>",
+											nextArrow : "<button style='font-size: 24px;cursor: pointer;display: inline-block; boder: none;background: none;border: none;color: white ;position: absolute;z-index: 200;top: 16%;right: 0%;'><i class='fas fa-angle-right'  style='font-size: -webkit-xxx-large;'></i></button>",
+											autoplaySpeed : 5000,
+											responsive : [ {
+												breakpoint : 1024,
+												settings : {
+													slidesToShow : 3,
+													slidesToScroll : 1
+												}
+											}, {
+												breakpoint : 600,
+												settings : {
+													slidesToShow : 2,
+													slidesToScroll : 1
+												}
+											}, {
+												breakpoint : 480,
+												settings : {
+													slidesToShow : 1,
+													slidesToScroll : 1
+												}
+											} ]
+										});
+						$("main").on(
+								"click",
+								function(e) {
+									if ($('.search-wrapper').hasClass("active")
+											&& $('#holder').width() == 250) {
+										$('.search-wrapper').removeClass(
+												'active');
+										// clear input
+										$('.search-wrapper').find(
+												'.search-input').val('');
+									}
+
+								});
+						$('.toggledown').mouseover(function() {
+							console.log('down');
+							$('#togglediv1').stop().slideDown();
+						});
+						$('.toggledown').mouseleave(function() {
+							console.log('up');
+							$('#togglediv1').stop().slideUp();
+						});
+						$.fn.scrollStopped = function(callback) {
+							var that = this, $this = $(that);
+							$this.scroll(function(ev) {
+								clearTimeout($this.data('scrollTimeout'));
+								$this.data('scrollTimeout', setTimeout(callback
+										.bind(that), 250, ev));
+							});
+						};
+						var lastScrollTop = 0;
+						var delta = 5;
+						var alpha = 20; // 동작의 구현이 시작되는 위치 
+						var navbarHeight = $('header').outerHeight();
+						var st = $(this).scrollTop();
+						var didScroll;
+						$(window).scroll(function(event) {
+							didScroll = true;
+						});
+						setInterval(function() {
+							if (didScroll) {
+								hasScrolled();
+								didScroll = false;
+							}
+						}, 250);
+						function hasScrolled() {
+
+							var st = $(this).scrollTop();
+
+							if (st > 5) {
+								$('header').removeClass('nav-down').addClass(
+										'nav-up');
+							} else {
+								$('header').removeClass('nav-up').addClass(
+										'nav-down');
+								//$('.css-1gh5316-StyledLeftNavItem>.ez2p5pn3').css('color', 'black');
+								//$('.css-1j46kt-StyledNavLink').css('color','black');
+								//$(".css-1vu9i2q-UserName").css('color','black');
+							}
+
+							//if (Math.abs(lastScrollTop - st) <= delta)
+							//return;
+							//	if (st > lastScrollTop && st > navbarHeight) {
+							//		$('header').removeClass('nav-down').addClass('nav-up');
+							//} else { // Scroll Up 
+							//		if (st + $(window).height() < $(document).height()) {
+							//			$('header').removeClass('nav-down').addClass('nav-up');
+							//	}
+							//}
+							//$(window).scrollStopped(
+							//		function(ev) {
+							//			$('header').removeClass('nav-up').addClass('nav-down');
+							//	});
+							//console.log($(window).height());
+							//console.log($(document).height());
+							lastScrollTop = st;
+
+						}
+
+					});
 </script>

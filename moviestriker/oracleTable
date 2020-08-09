@@ -1,12 +1,29 @@
 
 create table member(
 num number(5)constraint member_num_pk primary key,
-mailphone varchar2(40) constraint member_email_uk unique,
+email varchar2(40) constraint member_email_uk unique,
 pwd varchar2(30),
 name varchar2(30),
 mdate date
 );
 
 create sequence member_seq
+start with 1
+increment by 1;
+
+create table movies(
+num number(5)constraint movies_num_pk primary key,
+moviename varchar2(50),
+thumnail varchar2(100),
+moviestars number(5),
+opendate varchar2(50),
+hit number(5),
+rate varchar2(30),
+genre varchar2(30),
+nation varchar2(30),
+modate date
+);
+
+create sequence movies_seq
 start with 1
 increment by 1;

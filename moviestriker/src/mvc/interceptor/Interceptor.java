@@ -14,7 +14,7 @@ public class Interceptor extends HandlerInterceptorAdapter{
             throws Exception {
         HttpSession session = request.getSession();       
         //
-        String userid = (String) session.getAttribute("id");
+        String userid = (String) session.getAttribute("email");
         if(userid == null){
         	
         	

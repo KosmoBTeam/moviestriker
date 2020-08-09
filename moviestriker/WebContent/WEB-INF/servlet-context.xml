@@ -33,6 +33,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/" />
+			<mvc:mapping path="/main" />
 			<ref bean="commonInterceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>

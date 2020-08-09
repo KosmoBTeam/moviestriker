@@ -1,10 +1,34 @@
 package mvc.vo;
-//회원정보를 담은 VO
-//테이블 이름은 member_table
 public class MemberVO {
 	private int num ;
 
-	private String id, pwd, name, email, phone, address, rdate;
+	private String  pwd, name, email, mdate,authkey;
+
+	private int authstatus;
+
+	public String getMdate() {
+		return mdate;
+	}
+
+	public void setMdate(String mdate) {
+		this.mdate = mdate;
+	}
+
+	public String getAuthkey() {
+		return authkey;
+	}
+
+	public void setAuthkey(String authkey) {
+		this.authkey = authkey;
+	}
+
+	public int getAuthstatus() {
+		return authstatus;
+	}
+
+	public void setAuthstatus(int authstatus) {
+		this.authstatus = authstatus;
+	}
 
 	public int getNum() {
 		return num;
@@ -12,14 +36,6 @@ public class MemberVO {
 
 	public void setNum(int num) {
 		this.num = num;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getPwd() {
@@ -46,27 +62,4 @@ public class MemberVO {
 		this.email = email;
 	}
 
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getRdate() {
-		return rdate;
-	}
-
-	public void setRdate(String rdate) {
-		this.rdate = rdate;
-	}
 }
