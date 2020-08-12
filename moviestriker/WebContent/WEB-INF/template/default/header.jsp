@@ -57,7 +57,7 @@
 			<li class="css-socxq3-StyledRightNavItem toggledown"><div
 					class=" css-32jeke-Self e193xlpk0" style="width: 236px;" id="">
 					<span class="css-1vu9i2q-UserName e9o62ym3" id="my"
-						style="font-size: xx-large;">${sessionScope['name']}님</span>
+						style="font-size: xx-large;">${sessionScope.member.name}님</span>
 					<div id="togglediv1" class="displaynone"
 						style="height: 300px; box-sizing: inherit; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); width: fit-content; box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; font-size: 0.875rem; color: rgb(40, 42, 53); border-radius: 4px; background: white; margin-top: -20px;">
 						<ul id="profiletoggle" style="font-size: x-large;">

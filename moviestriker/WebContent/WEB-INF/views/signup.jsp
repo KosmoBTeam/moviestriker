@@ -1190,7 +1190,7 @@ ol, ul {
 					<main class="css-1494bd8-Self edt52et0">
 						<div class="css-9tzvq5-Inner e1h3r44e1">
 							<div class="css-d3y7ny-LabelTitle e1h3r44e2">회원가입</div>
-							<form action="joinMember" method="post"
+							<form action="joinMember" method="post" onsubmit="alert('회원가입 인증이메일을 전송했습니다. \n해당이메일을 확인해주세요')"
 								enctype="application/x-www-form-urlencoded">
 								<div class="eu52ful0">
 									<input name="name" id="name"

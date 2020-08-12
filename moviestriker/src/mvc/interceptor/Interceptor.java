@@ -7,6 +7,8 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import mvc.vo.MemberVO;
+
 public class Interceptor extends HandlerInterceptorAdapter{
 	 //
     @Override
@@ -14,8 +16,8 @@ public class Interceptor extends HandlerInterceptorAdapter{
             throws Exception {
         HttpSession session = request.getSession();       
         //
-        String userid = (String) session.getAttribute("email");
-        if(userid == null){
+        MemberVO user = (MemberVO) session.getAttribute("member");
+        if(user == null){
         	
         	
             response.sendRedirect("goLogin?next="+request.getRequestURI());

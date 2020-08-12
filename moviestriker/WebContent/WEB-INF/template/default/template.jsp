@@ -12,6 +12,10 @@
 <link rel="stylesheet" type="text/css"
 	href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript"
+	src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <style data-emotion="css-global"></style>
 <style data-emotion="css-global"></style>
@@ -228,33 +232,14 @@
 	}
 }
 
-@media ( max-width : 1024px) {
-	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(3n)>div>form>.css-up0rlb-StillcutContainer>.css-9lh6j6-StyledPreviewWrapper-StyledPreviewContainer
-		{
-		left: -80%;
-	}
-	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(3n-1)>div>form>.css-up0rlb-StillcutContainer>.css-9lh6j6-StyledPreviewWrapper-StyledPreviewContainer
-		{
-		left: -50%;
-	}
-	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(3n+1)>div>form>div.css-up0rlb-StillcutContainer>div.content-preview-exit-done
-		{
-		left: 0%;
-	}
-}
-
 @media ( min-width : 1024px) {
 	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(8n)>div>form>div.css-up0rlb-StillcutContainer>div.content-preview-exit-done
 		{
-		left: -80%;
-	}
-	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(8n-1)>div>form>div.css-up0rlb-StillcutContainer>div.content-preview-exit-done
-		{
-		left: -50%;
+		left: -50% !important;
 	}
 	li.css-1aw5v0q-RowItem[tabindex="0"]:nth-child(8n+1)>div>form>div.css-up0rlb-StillcutContainer>div.content-preview-exit-done
 		{
-		left: 0%;
+		left: 10% !important;
 	}
 }
 </style>

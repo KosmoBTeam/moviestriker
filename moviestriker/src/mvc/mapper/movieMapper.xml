@@ -27,6 +27,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<![CDATA[select mo.* from (select num,moviename,thumnail,moviestars,opendate,rate,genre,nation,modate, ROW_NUMBER() over(order by hit desc) as rk from movies) mo where  mo.rk<10 order by mo.rk desc]]>
 	</select>
 	<select id="getMovie" parameterType="int" resultType="movies">
-		select * from movies where num = #{num}
+		select *
+		from movies where num = #{num}
+	</select>
+	<select id="getOneTitleList" parameterType="int"
+		resultType="slidetitle">
+		<![CDATA[select * from slidetitle where num > #{no} and num <= #{no}+5]]>
 	</select>
 </mapper>

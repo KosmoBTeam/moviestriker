@@ -24,7 +24,7 @@
 		<h1 style="color: rgba(250, 250, 250, 0.15);">${movie.moviename}</h1>
 	</div>
 	<video src="${movie.video}" autoplay="autoplay" controls="controls"
-		style="height: -webkit-fill-available; width: -webkit-fill-available; z-index: 1;"></video>
+		style="height: -webkit-fill-available; width: width: 100%; z-index: 1;"></video>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">

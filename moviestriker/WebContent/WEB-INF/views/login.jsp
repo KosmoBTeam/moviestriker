@@ -99,7 +99,6 @@ transform:rotate(360deg)}
 									href="find_password">비밀번호를 잊어버리셨나요?</a>
 							</div>
 							<form action="login" method="post">
-								<input type="hidden" value="${next }" name="next">
 								<div class=" eu52ful0">
 									<input name="email" id="email"
 										class="e19dfl4j0 css-1og2nh1-StyledField-EmailField eu52ful1"
@@ -227,10 +226,11 @@ transform:rotate(360deg)}
 					$(this).parent("div").removeClass("css-unatsl-Self").removeClass("css-n7c9r1-Self");
 					}
 			});
-			if ($('#hiddenerror').val() === '아이디나 비밀번호가 잘못되었습니다.') {
+				console.log($('#hiddenerror').val().trim());
+			if ($('#hiddenerror').val().trim() !== "") {
+				console.log('hiddenappear!');
 				$('#hiddenerror').parent("div").addClass("css-cmoq9h-SubmitButtonBlock");
 			}
-			console.log($('#hiddenerror').val() === '아이디나 비밀번호가 잘못되었습니다.')
 		});
 	</script>
 	<iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin"

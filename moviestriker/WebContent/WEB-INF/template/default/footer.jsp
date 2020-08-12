@@ -61,11 +61,6 @@
 			Inc.</em> All rights reserved.
 	</div>
 </footer>
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript"
-	src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
 	function searchToggle(obj, evt) {
 		var container = $(obj).closest('.search-wrapper');
@@ -79,199 +74,63 @@
 			container.find('.search-input').val('');
 		}
 	}
-
-	$(document)
-			.ready(
-					function() {
-					    let isEnd = false;
-					    
-					    $(function(){
-					        $(window).scroll(function(){
-					            let $window = $(this);
-					            let scrollTop = $window.scrollTop();
-					            let windowHeight = $window.height();
-					            let documentHeight = $(document).height();
-					            
-					            console.log("documentHeight:" + documentHeight + " | scrollTop:" + scrollTop + " | windowHeight: " + windowHeight );
-					            
-					            // scrollbar의 thumb가 바닥 전 30px까지 도달 하면 리스트를 가져온다.
-					            if( scrollTop + windowHeight + 30 > documentHeight ){
-					                fetchList();
-					            }
-					        })
-					        fetchList();
-					    });
-					    let fetchList = function(){
-					        if(isEnd == true){
-					            return;
-					        }
-					        
-					        // 방명록 리스트를 가져올 때 시작 번호
-					        // renderList 함수에서 html 코드를 보면 <li> 태그에 data-no 속성이 있는 것을 알 수 있다.
-					        // ajax에서는 data- 속성의 값을 가져오기 위해 data() 함수를 제공.
-					        let startNo = $("#masterul li").last().data("no") || 0;
-					        $.ajax({
-					            url:"getMain?no=" + startNo ,
-					            type: "GET",
-					            dataType: "json",
-					            success: function(result){
-					                // 컨트롤러에서 가져온 방명록 리스트는 result.data에 담겨오도록 했다.
-					                // 남은 데이터가 5개 이하일 경우 무한 스크롤 종료
-					                let length = result.data.length;
-					                if( length < 5 ){
-					                    isEnd = true;
-					                }
-					                $.each(result.data, function(index, vo){
-					                    renderList(false, vo);
-					                })
-					            }
-					        });
-					    }
-					    
-					    let renderList = function(mode, vo){
-					        // 리스트 html을 정의
-					        let html = ;
-					        
-					        if( mode ){
-					            $("#list-guestbook").prepend(html);
-					        }
-					        else{
-					            $("#list-guestbook").append(html);
-					        }
-					    }
-						$('.goDetailbutton').click(function() {
-							$(this).parent(".goDetail").submit();
-						});
-						$('.css-1aw5v0q-RowItem')
-								.hover(function() {
-									var $transform = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-19lh6j6-StyledPreviewWrapper-StyledPreviewContainer");
-									var $origin = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-ox4zdw-StyledDefaultContentWrapper").children(".emn3bqe14");
-									$transform.css("z-index", "100").css("display", "block");
-									$origin.css("display", "none");
-							
-									$(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').parent('form').children('.css-qjvnrt-StyledContentTitleWrapper').children('.css-x436c0-Self-Self-StyledContentTitle').children(".css-1cplejl-Text").css("display", "none");
-									//$(this).parent(".slick-track").css("width", "6507px");
-									//$(this).children().children().children(".css-qjvnrt-StyledContentTitleWrapper").css('display','none');
-								}, function() {
-									var $transform = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-19lh6j6-StyledPreviewWrapper-StyledPreviewContainer");
-									var $origin = $(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').children(".css-ox4zdw-StyledDefaultContentWrapper").children(".emn3bqe14");
-									$transform.css("z-index", "1").css("display", "none");
-									//$transform.children("div").children("a").children("img").css("color", "black");
-									$origin.css("display", "block");
-									$(this).children('div').children('form').children('.css-up0rlb-StillcutContainer').parent('form').children('.css-qjvnrt-StyledContentTitleWrapper').children('.css-x436c0-Self-Self-StyledContentTitle').children(".css-1cplejl-Text").css("display", "block");
-									//$(this).parent(".slick-track").css("width", "6210px");
-									//$(this).children().children().children(".css-qjvnrt-StyledContentTitleWrapper").css("display", "block");
-								});
-						$('.slider').slick({
-							arrows : false
-						});
-						$('.css-1yx6r0f-ContentsContainer')
-								.slick(
-										{
-											slidesToShow : 8,
-											slidesToScroll : 1,
-											autoplay : false,
-											arrows : true,
-											prevArrow : "<button style='font-size:24px;cursor:pointer;display: inline-block;background: none;border: none;color: white;position: absolute;z-index: 200;top: 16%'><i class='fas fa-angle-left' style='font-size: -webkit-xxx-large;'></i></button>",
-											nextArrow : "<button style='font-size: 24px;cursor: pointer;display: inline-block; boder: none;background: none;border: none;color: white ;position: absolute;z-index: 200;top: 16%;right: 0%;'><i class='fas fa-angle-right'  style='font-size: -webkit-xxx-large;'></i></button>",
-											autoplaySpeed : 5000,
-											responsive : [ {
-												breakpoint : 1024,
-												settings : {
-													slidesToShow : 3,
-													slidesToScroll : 1
-												}
-											}, {
-												breakpoint : 600,
-												settings : {
-													slidesToShow : 2,
-													slidesToScroll : 1
-												}
-											}, {
-												breakpoint : 480,
-												settings : {
-													slidesToShow : 1,
-													slidesToScroll : 1
-												}
-											} ]
-										});
-						$("main").on(
-								"click",
-								function(e) {
-									if ($('.search-wrapper').hasClass("active")
-											&& $('#holder').width() == 250) {
-										$('.search-wrapper').removeClass(
-												'active');
-										// clear input
-										$('.search-wrapper').find(
-												'.search-input').val('');
-									}
-
-								});
-						$('.toggledown').mouseover(function() {
-							console.log('down');
-							$('#togglediv1').stop().slideDown();
-						});
-						$('.toggledown').mouseleave(function() {
-							console.log('up');
-							$('#togglediv1').stop().slideUp();
-						});
-						$.fn.scrollStopped = function(callback) {
-							var that = this, $this = $(that);
-							$this.scroll(function(ev) {
-								clearTimeout($this.data('scrollTimeout'));
-								$this.data('scrollTimeout', setTimeout(callback
-										.bind(that), 250, ev));
-							});
-						};
-						var lastScrollTop = 0;
-						var delta = 5;
-						var alpha = 20; // 동작의 구현이 시작되는 위치 
-						var navbarHeight = $('header').outerHeight();
-						var st = $(this).scrollTop();
-						var didScroll;
-						$(window).scroll(function(event) {
-							didScroll = true;
-						});
-						setInterval(function() {
-							if (didScroll) {
-								hasScrolled();
-								didScroll = false;
-							}
-						}, 250);
-						function hasScrolled() {
-
-							var st = $(this).scrollTop();
-
-							if (st > 5) {
-								$('header').removeClass('nav-down').addClass(
-										'nav-up');
-							} else {
-								$('header').removeClass('nav-up').addClass(
-										'nav-down');
-								//$('.css-1gh5316-StyledLeftNavItem>.ez2p5pn3').css('color', 'black');
-								//$('.css-1j46kt-StyledNavLink').css('color','black');
-								//$(".css-1vu9i2q-UserName").css('color','black');
+	$(document).ready(
+			function() {
+				$("main").on(
+						"click",
+						function(e) {
+							if ($('.search-wrapper').hasClass("active")
+									&& $('#holder').width() == 250) {
+								$('.search-wrapper').removeClass('active');
+								// clear input
+								$('.search-wrapper').find('.search-input').val(
+										'');
 							}
 
-							//if (Math.abs(lastScrollTop - st) <= delta)
-							//return;
-							//	if (st > lastScrollTop && st > navbarHeight) {
-							//		$('header').removeClass('nav-down').addClass('nav-up');
-							//} else { // Scroll Up 
-							//		if (st + $(window).height() < $(document).height()) {
-							//			$('header').removeClass('nav-down').addClass('nav-up');
-							//	}
-							//}
-							//$(window).scrollStopped(
-							//		function(ev) {
-							//			$('header').removeClass('nav-up').addClass('nav-down');
-							//	});
-							//console.log($(window).height());
-							//console.log($(document).height());
-							lastScrollTop = st;
-
-						}
-
+						});
+				$('.toggledown').mouseover(function() {
+					console.log('down');
+					$('#togglediv1').stop().slideDown();
+				});
+				$('.toggledown').mouseleave(function() {
+					console.log('up');
+					$('#togglediv1').stop().slideUp();
+				});
+				$.fn.scrollStopped = function(callback) {
+					var that = this, $this = $(that);
+					$this.scroll(function(ev) {
+						clearTimeout($this.data('scrollTimeout'));
+						$this.data('scrollTimeout', setTimeout(callback
+								.bind(that), 250, ev));
 					});
+				};
+				var lastScrollTop = 0;
+				var delta = 5;
+				var alpha = 20; // 동작의 구현이 시작되는 위치 
+				var navbarHeight = $('header').outerHeight();
+				var st = $(this).scrollTop();
+				var didScroll;
+				$(window).scroll(function(event) {
+					didScroll = true;
+				});
+				setInterval(function() {
+					if (didScroll) {
+						hasScrolled();
+						didScroll = false;
+					}
+				}, 250);
+				function hasScrolled() {
+
+					var st = $(this).scrollTop();
+
+					if (st > 5) {
+						$('header').removeClass('nav-down').addClass('nav-up');
+					} else {
+						$('header').removeClass('nav-up').addClass('nav-down');
+					}
+
+					lastScrollTop = st;
+
+				}
+			});
 </script>

@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/mvc/config/logback.xml</config>
 		<config>WebContent/WEB-INF/servlet-context.xml</config>
+		<config>WebContent/WEB-INF/spring/spring-security.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>WebContent/WEB-INF/spring/root-context.xml</config>
