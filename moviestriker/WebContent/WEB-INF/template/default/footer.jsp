@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <footer class="css-elo5ab-Self eyuxr3e0"
-	style="position: relative; background: rgba(0, 0, 0, .5); padding: 27px 50px 40px; display: block; top: auto;">
+	style="position: relative; background: rgba(0, 0, 0, .5); padding: 27px 50px 40px; display: block;">
 	<ul class="css-d9xhzx-LegalAndHelps eyuxr3e12">
 		<li class="css-15wgbxm-LegalAndHelpList eyuxr3e11">무비스트라이커 서비스
 			이용약관</li>
@@ -76,9 +76,15 @@
 	}
 	$(document).ready(
 			function() {
+				if($('#myid').val()==''){
+					window.location.replace("http://localhost:8080/moviestriker/goLogin");
+					}
 				$("main").on(
 						"click",
 						function(e) {
+							/* 							var windowWidth = $(window).width();
+
+							 alert(windowWidth); */
 							if ($('.search-wrapper').hasClass("active")
 									&& $('#holder').width() == 250) {
 								$('.search-wrapper').removeClass('active');
@@ -90,11 +96,11 @@
 						});
 				$('.toggledown').mouseover(function() {
 					console.log('down');
-					$('#togglediv1').stop().slideDown();
+					$('#togglediv1').stop().show();
 				});
 				$('.toggledown').mouseleave(function() {
 					console.log('up');
-					$('#togglediv1').stop().slideUp();
+					$('#togglediv1').stop().hide();
 				});
 				$.fn.scrollStopped = function(callback) {
 					var that = this, $this = $(that);
@@ -104,6 +110,19 @@
 								.bind(that), 250, ev));
 					});
 				};
+				$('body').mouseover(function(e) {
+					if ($(e.target).hasClass("fa-list-ul") || $(e.target).hasClass("displaynone")|| $(e.target).hasClass("masthead")|| $(e.target).hasClass("toli")) {
+						$('#togglediv2').stop().show();
+					} else {
+						$('#togglediv2').stop().hide();
+					}
+				});
+				/* 				$('.fa-list-ul').mouseover(function() {
+				
+				 });
+				 $('.fa-list-ul').mouseleave(function() {
+				
+				 }); */
 				var lastScrollTop = 0;
 				var delta = 5;
 				var alpha = 20; // 동작의 구현이 시작되는 위치 
@@ -132,5 +151,16 @@
 					lastScrollTop = st;
 
 				}
+
+				$("body").on("click", function(e) {
+					if ($(e.target).hasClass("fa-list-ul")) {
+
+					} else if ($(e.target).hasClass("masthead")) {
+
+					} else {
+
+					}
+				});
+
 			});
 </script>

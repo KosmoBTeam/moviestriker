@@ -11,8 +11,8 @@ public class MemberDao {
 	@Autowired
 	private SqlSessionTemplate ss;
 
-	public MemberVO loginSession(MemberVO vo) {
-		return ss.selectOne("mvo.loginSession", vo);
+	public MemberVO loginSession(String email) {
+		return ss.selectOne("mvo.loginSession", email);
 	}
 
 	public void insertMember(MemberVO vo) {
@@ -25,8 +25,8 @@ public class MemberDao {
 		return ss.selectOne("mvo.idchk", email);
 	}
 
-	public int checkPwd(MemberVO vo) {
-		return ss.selectOne("mvo.chkPwd", vo);
+	public String checkPwd(String email) {
+		return ss.selectOne("mvo.chkPwd", email);
 	}
 
 	public void updateAuthkey(MemberVO vo) {
@@ -47,5 +47,25 @@ public class MemberDao {
 	public MemberVO getId(String email) {
 		// TODO Auto-generated method stub
 		return ss.selectOne("mvo.getId", email);
+	}
+
+	public void delete(String email) {
+		ss.delete("mvo.delete", email);
+		
+	}
+
+	public void updateGood(MemberVO goodvo) {
+		ss.update("mvo.updateGood", goodvo);
+		
+	}
+
+	public MemberVO getMyGood(int num) {
+		// TODO Auto-generated method stub
+		return ss.selectOne("mvo.getMyGood", num);
+	}
+
+	public String getGood(int num) {
+		// TODO Auto-generated method stub
+		return ss.selectOne("mvo.getGood", num);
 	}
 }

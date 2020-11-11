@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+main {
+	margin-top: 80px;
+}
+
+.row {
+	display: flex;
+}
+
+.css-1fv4k8b-Self-Self {
+	
+}
+
+.css-1fv4k8b-Self-Self:hover {
+	transform: scale(1.5, 1.2);
+	transition: all 0.3s ease-in-out;
+	z-index: 100;
+}

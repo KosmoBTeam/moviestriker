@@ -1,7 +1,50 @@
 package mvc.vo;
 
 public class MoviesVO {
-	private int num, moviestars, hit, rnum;
+	private int num, moviestars, hit, rnum, good, start, end;
+
+	public int getStart() {
+		return start;
+	}
+
+	public void setStart(int start) {
+		this.start = start;
+	}
+
+	public int getEnd() {
+		return end;
+	}
+
+	public void setEnd(int end) {
+		this.end = end;
+	}
+
+	private MemberVO member;
+	private GoodVO goodvo;
+
+	public MemberVO getMember() {
+		return member;
+	}
+
+	public void setMember(MemberVO member) {
+		this.member = member;
+	}
+
+	public GoodVO getGoodvo() {
+		return goodvo;
+	}
+
+	public void setGoodvo(GoodVO goodvo) {
+		this.goodvo = goodvo;
+	}
+
+	public int getGood() {
+		return good;
+	}
+
+	public void setGood(int good) {
+		this.good = good;
+	}
 
 	public int getRnum() {
 		return rnum;
@@ -11,7 +54,23 @@ public class MoviesVO {
 		this.rnum = rnum;
 	}
 
-	private String moviename, thumnail, opendate, genre, nation, modate, rate, detail,video;
+	private String moviename, thumnail, opendate, genre, nation, modate, rate, detail, video, actors, director;
+
+	public String getActors() {
+		return actors;
+	}
+
+	public void setActors(String actors) {
+		this.actors = actors;
+	}
+
+	public String getDirector() {
+		return director;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
 
 	public String getVideo() {
 		return video;

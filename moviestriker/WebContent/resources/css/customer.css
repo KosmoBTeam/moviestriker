@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.css-1jlmqqo-Main {
+    flex: 1 1 0%;
+    background: rgb(255, 255, 255);
+}
+.css-1wuh4i4-StyledSelf {
+    background: rgb(255, 255, 255);
+    padding: 80px;
+    overflow: hidden;
+}
+.css-h3lduk-StyledSelf {
+    width: 980px;
+    margin: 6%;
+}
+.css-1jsbxm7-StyledSelf {
+    color: rgb(42, 42, 42);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 27px;
+    margin: 0px 0px 10px;
+}
+.css-8xguhm-StyledNoticesSection {
+    margin: 21px 0px 0px;
+}
+.css-row16-StyledNoticeUl {
+    border-top: 1px solid rgb(236, 236, 236);
+}
+.css-6z7wva-Self {
+    display: block;
+    overflow: hidden;
+}
+.css-1yajht8-Title {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-letter-spacing: -0.2px;
+    -moz-letter-spacing: -0.2px;
+    -ms-letter-spacing: -0.2px;
+    letter-spacing: -0.2px;
+    padding: 23px 0;
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+}
+.css-1frrj5l-ArrowIcon {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    -webkit-transform: rotate3d(1,0,0,0);
+    -ms-transform: rotate3d(1,0,0,0);
+    transform: rotate3d(1,0,0,0);
+    float: right;
+    width: 16px;
+    height: 16px;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+.css-1frrj5l-ArrowIcon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.css-q4a928-ContentsBlock {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 200ms;
+    transition: height 200ms;
+}
+.css-1ldw0xo-Contents {
+    color: rgba(18,18,24,0.87);
+    font-size: 14px;
+    line-height: 1.55;
+    white-space: pre-line;
+    padding-top: 35px;
+    padding-bottom: 29px;
+    border-top: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+}
+.css-1ldw0xo-Contents > a {
+    color: #3caaff !important;
+}
+img {
+    border-style: none;
+}
+.css-16x0d8z-StyledLoadMoreNoticeButtonBlock {
+    margin: 20px 0 0;
+}
+.css-l0xbus-Self-StyledLoadMoreNoticeButton {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 21px;
+    box-sizing: border-box;
+    padding: 7px 11px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+}
+.css-dsj7d6-StyledFaqCategoryBlock {
+    border-bottom: 1px solid #ececec;
+    margin: 19px 0 0;
+}
+.css-1b2m2gg-StyledFaqCategoryButton {
+    color: #121218;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-letter-spacing: -1px;
+    -moz-letter-spacing: -1px;
+    -ms-letter-spacing: -1px;
+    letter-spacing: -1px;
+    line-height: 100%;
+    padding: 0 0 24px 0;
+    border-bottom: 2px solid #121218;
+    margin: 26px 38px 0 0;
+    -webkit-transition: 200ms color;
+    transition: 200ms color;
+    margin-right: 20px;
+}
+input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+    appearance: initial;
+    border-width: 0px;
+    border-style: none;
+    border-color: transparent;
+    border-image: initial;
+    outline: none 0px;
+    background: none;
+    padding: 0px;
+}
+.css-q02kqq-StyledFaqCategoryButton {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 100%;
+    padding: 0px 0px 24px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 26px 38px 0px 0px;
+    transition: color 200ms ease 0s;
+    margin-right: 20px;
+}
+.css-1b2m2gg-StyledFaqCategoryButton:focus {
+    border-bottom: 2px solid rgb(18, 18, 24);
+}
+input[type="button"]:focus, input[type="submit"]:focus, button:focus {
+    border-width: 0px;
+    border-style: none;
+    border-color: transparent;
+    border-image: initial;
+    outline: none 0px;
+}

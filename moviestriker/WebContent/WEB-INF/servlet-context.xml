@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<aop:aspectj-autoproxy />
 	<context:annotation-config />
 	<mvc:annotation-driven />
 	<context:component-scan base-package="mvc" />
+	<bean name="/"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="index" />
 	<!-- 이미지 받아오기 위한 방법 -->
 
 	<mvc:resources location="/resources/"
 		mapping="/resources/**"></mvc:resources>
 
 	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
-	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
-		<property name="order" value="0"/>
+	<bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<property name="order" value="0" />
 	</bean>
-		<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<property name="definitions">
 			<list>
 				<value>/WEB-INF/tiles/tiles-definitions.xml</value>
@@ -32,10 +42,12 @@
 	</bean>
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/" />
 			<mvc:mapping path="/main" />
-			<ref bean="commonInterceptor"/>
+			<mvc:mapping path="/" />
+			<mvc:mapping path="/go**/*" />
+			<ref bean="commonInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>
-		<bean id="naverLoginBO" class="mvc.model.NaverLoginBO" ></bean>
+
+	<bean id="naverLoginBO" class="mvc.model.NaverLoginBO"></bean>
 </beans>

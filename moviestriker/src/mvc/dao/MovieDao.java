@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import mvc.vo.GoodVO;
 import mvc.vo.MoviesVO;
 import mvc.vo.SlideTitleVO;
 
@@ -77,5 +78,43 @@ public class MovieDao {
 				return vo;
 			}
 		});
+	}
+
+	public List<MoviesVO> getAllMovies(MoviesVO vo) {
+		// TODO Auto-generated method stub
+		return ss.selectList("movo.getAllMovies",vo);
+	}
+
+	public void updateGood(int num) {
+		ss.update("movo.updateGood", num);
+		
+	}
+
+	public List<MoviesVO> getGenreList() {
+		// TODO Auto-generated method stub
+		return ss.selectList("movo.getGenreList");
+	}
+	public List<MoviesVO> getNationList() {
+		// TODO Auto-generated method stub
+		return ss.selectList("movo.getNationList");
+	}
+
+	public List<MoviesVO> getAllMovies() {
+		// TODO Auto-generated method stub
+		return ss.selectList("movo.getAll");
+	}
+
+	public List<MoviesVO> getMyGoodMovies(int mnum) {
+		// TODO Auto-generated method stub
+		return ss.selectList("movo.getMyGoodMovies", mnum);
+	}
+
+	public void updateGood(GoodVO good) {
+		ss.insert("movo.updateGoodtable", good);
+		
+	}
+
+	public int getTotal(MoviesVO vo) {
+		return ss.selectOne("movo.getTotal",vo);
 	}
 }

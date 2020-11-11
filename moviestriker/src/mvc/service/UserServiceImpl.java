@@ -50,7 +50,7 @@ public class UserServiceImpl {
 	public void change(MemberVO vv) {
 		// TODO Auto-generated method stub
 		MailUtils sendMail;
-		String authkey = vv.getAuthkey();
+		memberDao.updatePwd(vv);
 		try {
 			sendMail = new MailUtils(mailSender);
 			sendMail.setSubject("<p>무비 스트라이커</p><p>임시 비밀번호 발급</p>");

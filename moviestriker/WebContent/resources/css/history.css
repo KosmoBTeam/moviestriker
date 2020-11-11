@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+main {
+	margin-top: 130px;
+}
+
+.css-1a4c3t1-Main {
+	flex: 1 1 0%;
+	background: rgb(20, 21, 23);
+}
+
+.css-zl5uet-Self {
+	letter-spacing: -0.0390625vw;
+	margin-top: 3.2vw;
+	margin-bottom: 4.0625vw;
+	padding: 0px 4%;
+}
+
+.css-1nbjwoy-StyledTab-StyledTab {
+	font-size: 1.875vw;
+	padding-bottom: 5px;
+	margin-right: 2.96875vw;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.css-m7bsde-StyledTab {
+	font-size: 1.875vw;
+	padding-bottom: 5px;
+	margin-right: 2.96875vw;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.css-5iu016-StyledEmptyListMessage {
+	color: rgba(255, 255, 255, 0.2);
+	white-space: pre-wrap;
+	text-align: center;
+	padding: 7.34375vw 0px;
+}
+
+.css-exqoqb-StyledIcon {
+	width: 7.89063vw;
+	height: 7.89063vw;
+	background:
+		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiB2aWV3Qm94PSIwIDAgMTAxIDEwMSI+CiAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLW9wYWNpdHk9Ii4xNiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNTAgOTRjLTExLjg3Mi0uMjgtMjEuNzctNC4zODItMjkuNjk0LTEyLjMwNkMxMi4zODIgNzMuNzcgOC4yOCA2My44NzIgOCA1MmMuMjgtMTEuODcyIDQuMzgyLTIxLjc3IDEyLjMwNi0yOS42OTRDMjguMjMgMTQuMzgyIDM4LjEyOCAxMC4yOCA1MCAxMGMxMS44NzIuMjggMjEuNzcgNC4zODIgMjkuNjk0IDEyLjMwNkM4Ny42MTggMzAuMjMgOTEuNzIgNDAuMTI4IDkyIDUyYy0uMjggMTEuODcyLTQuMzgyIDIxLjc3LTEyLjMwNiAyOS42OTRDNzEuNzcgODkuNjE4IDYxLjg3MiA5My43MiA1MCA5NHptMC03NC42NzZjLTkuMjQuMjI0LTE2Ljk0IDMuNDE2LTIzLjEgOS41NzZTMTcuNTQ4IDQyLjc2IDE3LjMyNCA1MmMuMjI0IDkuMjQgMy40MTYgMTYuOTQgOS41NzYgMjMuMXMxMy44NiA5LjM1MiAyMy4xIDkuNTc2YzkuMjQtLjIyNCAxNi45NC0zLjQxNiAyMy4xLTkuNTc2czkuMzUyLTEzLjg2IDkuNTc2LTIzLjFjLS4yMjQtOS4yNC0zLjQxNi0xNi45NC05LjU3Ni0yMy4xUzU5LjI0IDE5LjU0OCA1MCAxOS4zMjR6TTM4LjMyNCAzNS42Mkw2Ni4zOCA1MiAzOC4zMjQgNjguMzhWMzUuNjJ6Ii8+Cjwvc3ZnPgo=)
+		center center/contain no-repeat;
+	margin: 0px auto 0.625vw;
+}
+
+.css-1kdgvk2-StyledMessage {
+	font-size: 1.40625vw;
+	letter-spacing: -0.0617188vw;
+	line-height: 2.10938vw;
+	white-space: pre-wrap;
+}
+
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.css-zl5uet-Self {
+	letter-spacing: -0.0390625vw;
+	margin-top: 3.2vw;
+	margin-bottom: 4.0625vw;
+	padding: 0px 4%;
+}

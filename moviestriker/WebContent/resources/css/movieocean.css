@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+header {
+	position: relative !important;
+}
+
+.css-dcycjq-OptionsWrapper {
+	position: absolute;
+	left: -1px;
+	z-index: 999;
+	background-color: rgb(20, 21, 23);
+	box-sizing: content-box;
+	width: 100%;
+	max-height: 18.75vw;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	overflow-y: auto;
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-image: initial;
+	height: fit-content;
+	display: none;
+}
+
+.css-1o254lu-Self-ColumnSection-StyledSelf {
+	position: relative;
+	background-color: #141517;
+	overflow-x: visible;
+}
+
+.css-687ar4-Option {
+	color: #666666;
+	font-size: 1.09375vw;
+	font-weight: 700;
+	-webkit-letter-spacing: -0.015625vw;
+	-moz-letter-spacing: -0.015625vw;
+	-ms-letter-spacing: -0.015625vw;
+	letter-spacing: -0.015625vw;
+	line-height: 1.7187500000000002vw;
+	padding: 0.234375vw 0.78125vw;
+	height: 2.42188vw;
+}
+
+.css-687ar4-Option:hover {
+	color: #FFFFFF;
+}
+
+.css-ekai1p-Option:hover {
+	color: #FFFFFF;
+}
+
+.css-1te5psz-StyledBackground {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-size: auto;
+	opacity: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all 420ms ease 0s;
+}
+
+.css-ox4zdw-StyledDefaultContentWrapper {
+	position: relative;
+	z-index: 3;
+}
+
+.css-ekai1p-Option {
+	color: #666666;
+	font-size: 1.09375vw;
+	font-weight: 700;
+	-webkit-letter-spacing: -0.015625vw;
+	-moz-letter-spacing: -0.015625vw;
+	-ms-letter-spacing: -0.015625vw;
+	letter-spacing: -0.015625vw;
+	line-height: 1.7187500000000002vw;
+	padding: 0.234375vw 0.78125vw;
+	height: 2.42188vw;
+}
+
+.css-gz5hvd-Self-SelectComponent {
+	display: inline-block;
+	position: relative;
+	background-color: #141517;
+	text-align: left;
+	width: 17.1875vw;
+	height: 2.421875vw;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 2px;
+	cursor: pointer;
+	vertical-align: top;
+	margin: 0 0.5vw;
+}
+
+.css-18m3prp-Selectors, .css-13acquf-ExploreSelectors {
+	display: flex;
+	justify-content: space-between;
+}
+
+.css-13acquf-ExploreSelectors {
+	width: 45%;
+}
+
+.css-121mw1h-Header {
+	padding: 0px 4%;
+	margin: 3.2vw 0px 3.90625vw;
+}
+
+@media ( min-width : 1250px) {
+	.css-121mw1h-Header {
+		padding: 0px 50px;
+	}
+}
+
+.css-gz5hvd-Self-SelectComponent {
+	display: inline-block;
+	position: relative;
+	background-color: rgb(20, 21, 23);
+	text-align: left;
+	width: 17.1875vw;
+	height: 2.42188vw;
+	cursor: pointer;
+	vertical-align: top;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-image: initial;
+	border-radius: 2px;
+	margin: 0px 0.5vw;
+}
+
+.css-1f8b861-Self-OrderSelectComponent {
+	display: inline-block;
+	position: relative;
+	background-color: rgb(20, 21, 23);
+	text-align: left;
+	height: 2.42188vw;
+	cursor: pointer;
+	width: 13.6719vw;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-image: initial;
+	border-radius: 2px;
+}
+
+.css-1ewmjib-ValueContainerText {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1.09375vw;
+	font-weight: 700;
+	letter-spacing: -0.015625vw;
+	line-height: 1.71875vw;
+}
+
+main {
+	flex: 1;
+	background: #141517
+}
+
+.css-c14ryu-ValueContainer {
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding-right: 0.390625vw;
+	padding-left: 0.78125vw;
+	transition: color 0.5s ease 0s;
+}
+
+.css-1nt8psa-Self {
+	overflow-x: hidden;
+	background: #141517;
+}
+
+.css-zd5ta6-StyledRowList {
+	padding-top: 1.015625vw;
+	padding-bottom: 2.34375vw;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.css-1mkua0y-StyledSelf-EmbedRow {
+	margin-bottom: 0.546875vw;
+    height: auto;
+    width: -webkit-fill-available;
+}
+
+.css-1c7lx0y-Self-Row {
+	position: relative;
+	white-space: nowrap;
+	padding-right: 4%;
+	padding-left: 4%;
+	overflow-x: visible;
+}
+
+.css-1yx6r0f-ContentsContainer {
+	margin-right: -0.15625vw;
+	margin-left: -0.15625vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.css-1aw5v0q-RowItem {
+	display: inline-block;
+	vertical-align: top;
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.5, 0, 0.1, 1)
+		0s;
+	-webkit-transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+	transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.css-1aw5v0q-RowItem:first-of-type {
+	padding-left: 0;
+}
+
+@media only screen and (max-width: 999px) and (min-width: 800px) {
+	.css-1aw5v0q-RowItem {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 1000px) {
+	.css-1aw5v0q-RowItem {
+		width: 20%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.css-1aw5v0q-RowItem {
+		width: 20%;
+	}
+}
+
+@media only screen and (max-width: 799px) and (min-width: 500px) {
+	.css-1aw5v0q-RowItem {
+		width: 33.333333333333336%;
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.css-1aw5v0q-RowItem {
+		width: 50%;
+	}
+}
+
+.css-4tpl0j-StyledSelf-Content {
+	width: auto;
+}
+
+.css-v61r06-StyledSelf-StyledStillCut {
+	position: relative;
+	overflow: hidden;
+	background-color: #141517;
+	width: 100%;
+	padding: 28.125% 0;
+	height: 200px;
+}
+
+.css-1aw5v0q-RowItem:hover {
+	transform: scale(1.2, 1.2);
+	transition: all 0.3s ease-in-out;
+	z-index: 100;
+}
+
+.css-v61r06-StyledSelf-StyledStillCut {
+	padding: 0;
+}
+
+.css-19lh6j6-StyledPreviewWrapper-StyledPreviewContainer {
+	position: relative;
+	height: 200px;
+	top: 0;
+}
+
+.css-x436c0-Self-Self-StyledContentTitle {
+	text-align: center;
+}
+
+.pagination li {
+    font-size: -webkit-xxx-large;
+    margin: 0% 2% 0% 2%;
+    float: left;
+}
+/* .css-13olb1v-StyledEmbedSlider div{
+	height: fit-content;
+} */
+#container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 20%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 

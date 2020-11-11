@@ -26,10 +26,5 @@ public class MemberRestController {
 		//}
 		return cnt;
 	}
-	@RequestMapping(value = "/checkPwd")
-	public int checkPwd(MemberVO vo,String nowpwd) {
-		int cnt = memberDao.checkPwd(vo);
-		System.out.println(cnt);
-		return cnt;
-	}
+
 }

@@ -211,23 +211,6 @@ transform:rotate(360deg)}
 					$(this).parent("div").removeClass("css-unatsl-Self").removeClass("css-n7c9r1-Self");
 					}
 			});
-			$("#pwd").keyup(function() {
-				if($(this).val().length >=6){
-					c=1;
-					$(this).parent("div").removeClass("css-unatsl-Self").addClass("css-n7c9r1-Self");
-					}else{
-						c = 0;
-						$(this).parent("div").removeClass("css-n7c9r1-Self").addClass("css-unatsl-Self");	
-						}
-				if($(this).val().length == 0){
-					
-					$(this).parent("div").removeClass("css-unatsl-Self").removeClass("css-n7c9r1-Self");
-					}
-			});
-			if ($('#hiddenerror').val() === '아이디나 비밀번호가 잘못되었습니다.') {
-				$('#hiddenerror').parent("div").addClass("css-cmoq9h-SubmitButtonBlock");
-			}
-			console.log($('#hiddenerror').val() === '아이디나 비밀번호가 잘못되었습니다.')
 		});
 	</script>
 	<iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin"

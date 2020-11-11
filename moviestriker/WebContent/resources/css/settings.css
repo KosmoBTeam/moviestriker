@@ -1,0 +1,257 @@
+@charset "EUC-KR";
+
+ol, ul {
+	list-style-type: none;
+	margin-block-end: 0px;
+	margin-block-start: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+input.css-bxfjog-StyledField[type="email"], input.css-bxfjog-StyledField[type="number"],
+	input.css-bxfjog-StyledField[type="password"], input.css-bxfjog-StyledField[type="search"],
+	input.css-bxfjog-StyledField[type="tel"], input.css-bxfjog-StyledField[type="text"]
+	{
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	border: 1px solid #d4d4d4;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	height: 30px;
+}
+
+}
+html, body {
+	font-weight: 400;
+	color: black;
+	height: 100%;
+	background: black !important;
+	padding: 0px;
+	margin: 0px;
+}
+
+.css-1jlmqqo-Main {
+	flex: 1 1 0%;
+	background: rgb(255, 255, 255);
+}
+
+.css-km3nyk-StyledSelf-Self {
+	background: rgb(255, 255, 255);
+	padding: 100px;
+	overflow: hidden;
+	width: fit-content;
+}
+
+*, ::before, ::after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+footer {
+	top: 100% !important;
+}
+
+.css-1epg2mh-SettingListContentRow {
+	display: flex;
+	align-items: flex-start;
+	padding: 8px 0px;
+}
+
+.css-4c69n5-CouponButtonBlock {
+	padding: 11px 0px;
+}
+
+.css-awho9y-SettingListTitle {
+	color: rgb(51, 51, 51);
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -0.4px;
+	width: 140px;
+	padding: 20px 0px;
+}
+
+.css-1vbaetw-Container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.css-34jiqc-Section {
+	border-bottom: 1px solid #ececec;
+	margin: 0 0 30px;
+}
+
+.css-14w6zap-SectionHeader {
+	color: #2a2a2a;
+	font-size: 18px;
+	font-weight: 700;
+	-webkit-letter-spacing: -0.3px;
+	-moz-letter-spacing: -0.3px;
+	-ms-letter-spacing: -0.3px;
+	letter-spacing: -0.3px;
+	line-height: 27px;
+	margin: 0 0 10px;
+}
+
+.css-ar8roi-SettingList {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.css-awho9y-SettingListTitle {
+	color: #333333;
+	font-size: 15px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	width: 140px;
+	padding: 20px 0;
+}
+
+.SettingListContent {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-align-items: flex-start;
+	-webkit-box-align: flex-start;
+	-ms-flex-align: flex-start;
+	align-items: flex-start;
+}
+
+.css-1epg2mh-SettingListContentRow {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: flex-start;
+	-webkit-box-align: flex-start;
+	-ms-flex-align: flex-start;
+	align-items: flex-start;
+	padding: 8px 0;
+}
+
+.css-4c69n5-CouponButtonBlock {
+	padding: 11px 0;
+}
+
+.css-otq1kd-SettingHrefButton {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	-webkit-text-decoration: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding: 7px 11px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+}
+
+.css-wfgy93-Self {
+	background: none;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	box-sizing: border-box;
+	padding: 7px 11px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+}
+
+.css-wfgy93-Self:hover {
+	background-color: #f4f4f4;
+}
+
+.css-1ptac2y-Option-CurrentOption {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	padding: 7px 11px 7px 11px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	background: #fff
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTIgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU1LjIgKDc4MTgxKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5JY29ucyAvIFNldHRpbmdzIC8gRHJvcGRvd248L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbnMtLy1TZXR0aW5ncy0vLURyb3Bkb3duIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iY2FyZXQtdXAtZG93bi1mIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjUwMDAwMCwgMC41MDAwMDApIiBmaWxsPSIjNDY0NjQ2IiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNMC4yODIsNi4yNzM0Mzc1IEw4Ljk0ODY2NjY3LDYuMjczNDM3NSBMNC42Nzc2NjY2NywxMC43NDIxODc1IEwwLjI4Miw2LjI3MzQzNzUgWiBNOC45NDg2NjY2Nyw0LjcyNjU2MjUgTDAuMjgyLDQuNzI2NTYyNSBMNC41NTI2NjY2NywwLjI1NzgxMjUgTDguOTQ4NjY2NjcsNC43MjY1NjI1IFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)
+		no-repeat top 13px right 9px;
+	background-size: 11px 11px;
+	padding-right: 26px;
+}
+
+.css-lzf1fk-Self-SmallSettingButton {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	box-sizing: border-box;
+	padding: 7px 11px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	line-height: 21px;
+	padding: 4px 8px 5px 8px;
+	margin: 8px 0 0 0;
+	outline: none 0px;
+	background: none;
+}
+
+.css-1sli7is-Button-GreenButton-ChangeProfileButton {
+	background-color: #121218;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 700;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	width: 100%;
+	padding: 10px 14px;
+	border-radius: 4px;
+	background: #22b99b;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-letter-spacing: -0.4px;
+	-moz-letter-spacing: -0.4px;
+	-ms-letter-spacing: -0.4px;
+	letter-spacing: -0.4px;
+	line-height: 21px;
+	padding: 7px 11px;
+	border-radius: 3px;
+	font-size: 17px;
+	font-weight: 700;
+	width: 170px;
+	padding: 13px 11px;
+}
+
+main {
+	margin-top: 80px;
+	height: 120%;
+}
+
+html, body {
+	height: 100%;
+}

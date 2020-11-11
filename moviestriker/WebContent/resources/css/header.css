@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+.css-1926epj-Self {
+	transition: top 0.2s ease-in-out;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	background: rgba(255, 255, 255, 0.58)
+}
+
+@media ( min-width :1200px) {
+	button.masthead {
+		display: none;
+	}
+}
+
+.css-q6083p-StyledLogo {
+	position: relative;
+	z-index: 10001;
+	float: left;
+	background: url() 0 16px no-repeat;
+	background-size: 99px 40px;
+	width: 99px;
+	height: 72px;
+}
+
+.css-etenzj-StyledLeftNav {
+	float: left;
+	padding-left: 21px;
+}
+
+.css-etenzj-StyledLeftNav:before, .css-etenzj-StyledLeftNav:after {
+	content: " ";
+	display: table;
+}
+
+.css-etenzj-StyledLeftNav:after {
+	clear: both;
+}
+
+.css-1gh5316-StyledLeftNavItem {
+	float: left;
+	line-height: 72px;
+	margin-left: 23px;
+}
+
+.css-1gh5316-StyledLeftNavItem>.ez2p5pn3 {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	font-weight: bold;
+	white-space: nowrap;
+	max-width: 150px;
+	padding: 0 4px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.css-1gh5316-StyledLeftNavItem>.ez2p5pn2 {
+	display: block;
+	text-align: center;
+}
+
+.css-1ga8frb-StyledNavLink {
+	font-weight: 400;
+	position: relative;
+}
+
+.css-mj0oj1-Self-Self {
+	position: relative;
+}
+
+.css-1w8esii-ChildrenWrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.css-1j46kt-StyledNavLink {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	font-weight: bold;
+	white-space: nowrap;
+	max-width: 110px;
+	padding: 0 4px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.css-1sjcvs8-StyledRightNav {
+	display: flex;
+	position: relative;
+	float: right;
+}
+
+#profiletoggle>li>a {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	color: black;
+	font-weight: 400;
+	white-space: nowrap;
+	max-width: 110px;
+	padding: 0 4px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.css-1sjcvs8-StyledRightNav:before, .css-1sjcvs8-StyledRightNav:after {
+	content: " ";
+	display: table;
+}
+
+.css-1sjcvs8-StyledRightNav:after {
+	clear: both;
+}
+
+.css-socxq3-StyledRightNavItem {
+	line-height: 72px;
+}
+
+.css-socxq3-StyledRightNavItem+.css-socxq3-StyledRightNavItem {
+	margin-left: 23px;
+}
+
+.css-1bihn1n-StyledSearchNav {
+	float: right;
+	text-align: right;
+}
+
+.css-7ql8ly-StyledSearchNavText {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.88);
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.css-7ql8ly-StyledSearchNavText:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.css-1kxovx7-StyledSearchIcon {
+	display: inline-block;
+	line-height: 1;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+}
+
+.css-1kxovx7-StyledSearchIcon svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.css-32jeke-Self {
+	position: relative;
+}
+
+.css-1vu9i2q-UserName {
+	flex: 1;
+	font-weight: bold;
+	white-space: nowrap;
+	max-width: 110px;
+	padding: 0 4px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.nav-up {
+	background: black;
+	color: white !important;
+}
+
+.nav-down {
+	background: rgba(255, 255, 255, 0.58);
+	color: black !important;
+}
+
+.css-etenzj-StyledLeftNav {
+	float: left;
+	padding-left: 21px;
+}
+
+.css-etenzj-StyledLeftNav:before, .css-etenzj-StyledLeftNav:after {
+	content: " ";
+	display: table;
+}
+
+.css-1gh5316-StyledLeftNavItem {
+	float: left;
+	line-height: 72px;
+	margin-left: 23px;
+}
+
+.css-1gh5316-StyledLeftNavItem>.ez2p5pn3 {
+	display: block;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.search-wrapper {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: -40%;
+}
+
+.search-wrapper.active {
+	
+}
+
+@media ( max-width :1200px) {
+	.css-1vu9i2q-UserName {
+		display: none;
+	}
+	.css-1gh5316-StyledLeftNavItem>.ez2p5pn3 {
+		display: none;
+	}
+	.css-1j46kt-StyledNavLink {
+		display: none;
+	}
+	#togglediv1 {
+		position: fixed;
+		top: 80px;
+		left: -60%;
+		width: -webkit-fill-available !important;
+	}
+	#togglediv2 {
+		position: fixed;
+		top: 70px;
+		left: -10%;
+		width: -webkit-fill-available !important;
+	}
+}
+
+@media ( max-width :800px) {
+	.css-socxq3-StyledRightNavItem {
+		width: 0px;
+	}
+	.search-wrapper {
+		left: -500%;
+	}
+}
+
+#profiletoggle>li {
+	line-height: initial;
+	color: rgb(40, 42, 53);
+	font-weight: 500;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+#profiletoggle>li:hover {
+	background: #c8f9ff;
+}

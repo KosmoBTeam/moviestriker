@@ -47,17 +47,7 @@
 	data-rh="true">
 <link rel="alternate" hreflang="x-default" href="/sign_in"
 	data-rh="true">
-<meta property="og:url" content="/sign_in" data-rh="true">
-<style type="text/css">
 
-
-@keyframes rotateSpinner { 0%{
-	transform: rotate(0deg)}
-100%{
-transform:rotate(360deg)}
-}
-
-</style>
 </head>
 <body>
 	<div class="zopim" __jx__id="___$_76 ___$_76"
@@ -98,12 +88,12 @@ transform:rotate(360deg)}
 									class="css-1h9xpgj-FindPasswordLink edt52et2"
 									href="find_password">비밀번호를 잊어버리셨나요?</a>
 							</div>
-							<form action="login" method="post">
+							<form action="login" method="post" enctype="application/x-www-form-urlencoded">
 								<div class=" eu52ful0">
 									<input name="email" id="email"
 										class="e19dfl4j0 css-1og2nh1-StyledField-EmailField eu52ful1"
 										placeholder="이메일 (example@gmail.com)" autocomplete="off"
-										type="email" value="">
+										type="email">
 								</div>
 								<div class=" eu52ful0">
 									<input name="pwd" id="pwd"
